@@ -125,6 +125,11 @@ clean:
 all: clean main
 ```
 
+
+The default action of certain signals is to cause a process to terminate and produce a core dump file, a disk file containing an image of the process's memory at the time of termination. This image can be used in a debugger (e.g., gdb(1)) to inspect the state of the program at the time that it terminated.
+
+
+
 ### Exercise ###
 
 1. I go through the following steps on clic and get the following output.
@@ -170,3 +175,15 @@ implicit rules that make knows by default.
     clean:
             rm -f *.o *˜ a.out core main
 ```
+
+
+
+
+
+
+
+
+
+
+
+
